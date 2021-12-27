@@ -1,0 +1,47 @@
+@use '../abstract' as *;
+@use '../base' as *;
+
+.banner {
+    padding-top: rem(72);
+    padding-bottom: rem(60);
+}
+
+.banner-title {
+    text-align: center;
+    line-height: 1.5;
+    max-width: 635px;
+    margin: 0 auto;
+
+    @include up(1024) {
+        font-size: rem(32);
+    }
+}
+
+.banner-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(16);
+    margin-top: rem(32);
+    margin-bottom: rem(32);
+    text-align: center;
+    font-size: var(--h6-font-size);
+
+    @include up(1024) {
+        font-size: var(--h4-font-size);
+        margin-top: rem(42);
+        margin-bottom: rem(42);
+
+    }
+}
+
+.vertical-line {
+    display: inline-block;
+    height: 48px;
+    width: 1px;
+    background-color: var(--clr-primary-300);
+
+    @include up(1024) {
+        width: 2px;
+    }
+}

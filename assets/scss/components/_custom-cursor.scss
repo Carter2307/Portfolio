@@ -1,0 +1,48 @@
+.hdc-cursor {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 250;
+    will-change: transform;
+    width: 10px;
+    pointer-events: none;
+    height: 10px;
+    border-radius: 50%;
+    // background-color: var(--clr-primary-500);
+    mix-blend-mode: difference;
+    transition: transform .05s ease-in-out, opacity .25s ease-in-out;
+}
+
+.hdc-cursor::before {
+    content: "";
+    position: absolute;
+    opacity: 1;
+    top: -16px;
+    left: -16px;
+    display: inline-block;
+    z-index: 250;
+    width: 64px;
+    pointer-events: none;
+    height: 64px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgb(142, 142, 142);
+    transform: scale(.3);
+    mix-blend-mode: difference;
+    transition: transform .25s ease-in-out, opacity .25s ease-in-out;
+}
+
+
+.hdc-cursor.-visible {
+    opacity: 1;
+}
+
+// .hdc-cursor.-exclusion {
+//     mix-blend-mode: difference;
+//     background-blend-mode: difference;
+// }
+.hdc-cursor.-pointer::before {
+    transform: scale(1.1);
+}

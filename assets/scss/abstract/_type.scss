@@ -1,0 +1,14 @@
+@use '../abstract/functions'as *;
+
+$type : (big : rem(72),
+    h1 : rem(54),
+    h2 : rem(48),
+    h3 : rem(32),
+    h4 : rem(24),
+    h5 : rem(20),
+    h6 : rem(18),
+    normal : rem(16),
+    small : rem(14),
+    smaller : rem(12),
+
+);

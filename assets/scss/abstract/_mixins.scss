@@ -1,0 +1,46 @@
+//Center element
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//Flex element with space-between
+@mixin flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+//Flex element with space-arround
+@mixin flex-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+//Flex element with space-evenly
+@mixin flex-evenly {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+//Reset default list style
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+//Libraries
+@mixin grid($value, $length) {
+    .#{$length}\:flex-#{$value} {
+        grid-row-start: span 1 !important;
+        grid-row-end: span 1 !important;
+        grid-column-start: span #{$value} !important;
+        grid-column-end: span #{$value} !important;
+    }
+
+}

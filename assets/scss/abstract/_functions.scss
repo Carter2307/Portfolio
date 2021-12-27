@@ -1,0 +1,7 @@
+// Convert PX to REM
+@use "sass:math";
+
+@function rem($value, $root-font: 16) {
+    $result: math.div($value, $root-font);
+    @return $result * 1rem;
+}

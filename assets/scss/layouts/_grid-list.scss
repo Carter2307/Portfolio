@@ -1,0 +1,54 @@
+@use '../abstract' as *;
+@use '../base' as *;
+
+.grid-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: rem(20);
+    padding: rem(32) 0;
+
+    @include up(768) {
+        grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+
+    }
+}
+
+.grid-item {
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    max-height: 420px;
+    overflow: hidden;
+}
+
+.grid-item-overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--clr-primary-300);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    transition: all .4s;
+}
+
+.grid-item-link:hover {
+    .grid-item-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.grid-item-cover {
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+}

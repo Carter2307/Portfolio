@@ -1,0 +1,23 @@
+@use '../abstract'as *;
+@use '../base'as *;
+@use '../abstract/functions'as *;
+
+
+.container {
+    width: 100%;
+    max-width: $container;
+    margin: 0 auto;
+
+    padding-left: rem(20);
+    padding-right: rem(20);
+
+    @include up(768) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include up(1150) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

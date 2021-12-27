@@ -1,0 +1,15 @@
+@use '../abstract/'as *;
+
+.about {
+    margin: rem(64) 0;
+}
+
+.about-container {
+    gap: rem(32);
+}
+
+.about-title {
+    font-size: var(--h3-font-size);
+    font-weight: 500;
+    margin-bottom: rem(16);
+}

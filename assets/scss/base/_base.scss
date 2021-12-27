@@ -1,0 +1,14 @@
+body {
+    font-family: "Space Grotesk", sans-serif;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.3;
+    overflow-x: hidden;
+    color: var(--clr-primary-300);
+}
+
+
+::selection {
+    color: white;
+    background-color: var(--clr-primary-300);
+}

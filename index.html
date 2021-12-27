@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta tag-->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Title-->
+		<title>Welcome to my Portfolio</title>
+		<!-- Favicon -->
+		<link rel="icon" type="img/png" href="assets/images/favicon.png" />
+
+		<!-- CSS files -->
+		<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+		<!-- Main stylesheet -->
+		<link rel="stylesheet" href="assets/scss/main.scss" />
+	</head>
+	<body>
+		<!-- start of custom mouse pointer -->
+		<div class="hdc-cursor"></div>
+		<!-- End of custom mouse pointer -->
+
+		<!-- start of navigation -->
+		<header class="header">
+			<div class="container header-container">
+				<!-- Logo -->
+				<a href="/" class="logo">Roger B.</a>
+
+				<!-- Navigation -->
+				<nav class="navigation" id="navigation">
+					<ul class="nav-link" role="list">
+						<li class="nav-item"><a href="#work" class="animated-title">Work</a></li>
+						<li class="nav-item"><a href="#about" class="animated-title">About</a></li>
+						<!-- Navigation close button -->
+						<li class="nav-closer" id="nav-closer">
+							<i class="bx bx-x bx-tada"></i>
+						</li>
+					</ul>
+					<a  href="#contact" class="button button-primary">Contact</a>
+				</nav>
+
+				<!-- Nav toggler -->
+				<div class="nav-toggler" id="nav-toggle">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						width="24"
+						height="24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="1.5"
+						stroke-linecap="butt"
+						stroke-linejoin="miter"
+					>
+						&lt;!--! Atomicons Free 1.00 by @atisalab License - https://atomicons.com/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons
+						--&gt;
+						<line x1="21" x2="3" y1="18" y2="18"></line>
+						<line x1="21" x2="3" y1="12" y2="12"></line>
+						<line x1="21" x2="3" y1="6" y2="6"></line>
+					</svg>
+				</div>
+			</div>
+		</header>
+		<!-- end of navigation -->
+		<!-- Start of banner-->
+		<section class="banner">
+			<div class="container">
+				<h1 class="banner-title animated-title">
+					I'm Roger Bentcha, a Digital Designer from France. I do UI & UX design, websites as well as front end development.
+				</h1>
+				<div class="banner-line">
+					<span class="vertical-line"></span>
+					<h4>See my work</h4>
+				</div>
+			</div>
+		</section>
+		<!-- End of banner-->
+
+		<!-- Start of grid-list-->
+		<section class="grid-list" id="work">
+			<div class="container grid-list-container">
+				<!-- Start grid item-->
+				<div class="grid-item">
+					<a href="https://greendy-landing-page.vercel.app/" class="grid-item-link">
+						<picture class="grid-item-cover">
+							<source srcset="/assets/images/cover-1.png?as=webp&width=1200" type="image/png" />
+							<img src="/assets/images/cover-1.png?width=600" alt="template cover" />
+						</picture>
+
+						<div class="grid-item-overlay">
+							<h4>Greendy Web and marketing agency - Landing Page</h4><br>
+							<p>See Fulll Preview</p>
+						</div>
+					</a>
+				</div>
+				<div class="grid-item">
+					<a href="/template/deliver-landingpage/index.html" class="grid-item-link">
+						<picture class="grid-item-cover">
+							<source srcset="/assets/images/cover-2.png?as=webp&width=1200" type="image/png" />
+							<img src="/assets/images/cover-2.png?width=600" alt="template cover" />
+						</picture>
+
+						<div class="grid-item-overlay">
+							<h4>Greendy delivery landing page</h4>
+						</div>
+					</a>
+				</div>
+				<div class="grid-item">
+					<a href="#" class="grid-item-link">
+						<picture class="grid-item-cover">
+							<source srcset="/assets/images/cover-1.webp?as=webp&width=400" type="image/webp" />
+							<img src="/assets/images/cover-1.webp?width=600" alt="test image" />
+						</picture>
+
+						<div class="grid-item-overlay">
+							<h4>Greendy delivery landing page</h4>
+						</div>
+					</a>
+				</div>
+				<div class="grid-item">
+					<a href="#" class="grid-item-link">
+						<picture class="grid-item-cover">
+							<source srcset="/assets/images/cover-1.webp?as=webp&width=400" type="image/webp" />
+							<img src="/assets/images/cover-1.webp?width=600" alt="test image" />
+						</picture>
+
+						<div class="grid-item-overlay">
+							<h4>Greendy delivery landing page</h4>
+						</div>
+					</a>
+				</div>
+				<!-- End grid item-->
+			</div>
+		</section>
+		<!-- End of grid-list-->
+
+		<!-- Start of About and contact -->
+		<section class="about" id="about">
+			<div class="container grid-12 about-container">
+				<div class="sm:flex-4 md:flex-3 lg:flex-8">
+					<h4 class="about-title">About</h4>
+					<p>
+						I'm Roger, a Web Designer and front-end dev in France. I have worked for many small companies around the world, helping build stunning designs,
+						and provide a creative direction across multiple platforms and mediums. My skills include: Websites, UI and UX, Graphic
+						design.
+					</p>
+				</div>
+				<div class="sm:flex-4 md:flex-1 lg:flex-4">
+					<h4 class="about-title">Contact</h4>
+					<p>Rogerbentcha@gmail.com</p>
+					<p>+596696600723</p>
+				</div>
+			</div>
+		</section>
+		<!-- End of About an contact -->
+
+		<!-- Start footer-->
+		<footer class="footer">
+			<div class="container footer-container grid-12" id="contact">
+				<h5 class="sm:flex-4 md:flex-2 lg:flex-8">Rogerbentcha @ 2021 - Porfolio</h5>
+				<h5 class="sm:flex-4 md:flex-2 lg:flex-4">Make with love ❤️ in france 🇫🇷</h5>
+			</div>
+		</footer>
+		<!-- End footer-->
+
+		<!-- Js files -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+		<!-- Main script -->
+		<script src="assets/js/app.js" type="module"></script>
+	</body>
+</html>

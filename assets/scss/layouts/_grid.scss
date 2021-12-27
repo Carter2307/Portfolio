@@ -1,0 +1,44 @@
+@use '../base'as *;
+@use '../abstract/'as *;
+
+.grid-12 {
+    display: grid;
+
+    //sm
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    align-items: start;
+    justify-items: stretch;
+    width: 100%;
+    grid-auto-flow: row;
+
+    //md
+    @include up(800) {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    //l
+    @include up(1024) {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+}
+
+@include up(768) {
+    @for $i from 1 through 6 {
+        @include grid($i, 'md');
+    }
+}
+
+@include down(767) {
+    @for $i from 1 through 4 {
+        @include grid($i, 'sm');
+    }
+}
+
+@include up(1024) {
+    @for $i from 1 through 12 {
+        @include grid($i, 'lg');
+    }
+}

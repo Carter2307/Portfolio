@@ -1,0 +1,13 @@
+@use '../abstract/'as *;
+
+.footer {
+    padding: rem(48) 0;
+
+    h5 {
+        font-size: var(--normal-font-size);
+    }
+}
+
+.footer-container {
+    gap: rem(16);
+}

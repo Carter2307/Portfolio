@@ -1,0 +1,26 @@
+@use "../abstract"as *;
+
+:root {
+
+    //Generate all color variables in document root
+    @each $color,
+    $shade in $colors {
+
+        //$color --> primary
+        //$shade : 900, 800, 700,....
+        @each $prop,
+        $value in $shade {
+            --clr-#{$color}-#{$prop} : #{$value};
+        }
+    }
+
+    /*========== FONT AND TYPOGRAPHY ==========*/
+    //Generate all font  size scale
+    @each $types,
+    $value in $type {
+        // $type --> big, h1, small ...
+        // $value --> 100, 200, 300 ...
+        --#{$types}-font-size : #{$value};
+    }
+
+}

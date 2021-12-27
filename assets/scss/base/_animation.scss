@@ -1,0 +1,26 @@
+//Anime title css
+.animated-title {
+  line-height: 1;
+}
+
+.animated-title>span {
+  display: inline-block;
+  overflow: hidden;
+}
+
+
+.animated-title span span {
+  display: inline-block;
+  transform: translatey(100%);
+  animation: animateWord 0.7s 0s both;
+}
+
+@keyframes animateWord {
+  from {
+    transform: translatey(100%);
+  }
+
+  to {
+    transform: translatey(0);
+  }
+}
